@@ -190,7 +190,7 @@ ul{
 
 .service__inner{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-gap:55px 116px;
 }
 .service__item--activ
@@ -202,6 +202,7 @@ ul{
 .service__item{
     /* width: 330px; */
     text-align: center;
+    transition: 1.5s ease;
 }
 .project__info{
     border: 1px solid #E3E1D5;
@@ -916,6 +917,7 @@ ul{
     .prices__list{
         padding: 29px 22px;
         max-width: 230px;
+        gap: 8px;
     }
     .accordion__item{
         padding: 16px 61px 16px 30px;
@@ -983,7 +985,9 @@ ul{
         height: 212px;
         max-width: 300px;
     }
-    
+    .contacts__img--hiden{
+        display: none;
+    }
 }
 @media (max-width:370px) {
     .select__city{
